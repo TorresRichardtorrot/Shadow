@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowSell</title>
+    <link rel="stylesheet" href="/Cpts/css/admin.css">
+    <link rel="shortcut icon" href="/Cpts/imagen/logo-blanco.png" type="image/x-icon">
+</head>
+<script src="https://kit.fontawesome.com/235264cb45.js" crossorigin="anonymous"></script>
+<body id="body">
+    
+    <header>
+        <div class="icon_menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+        <h2 class="titulo_admin">ShadowSell</h2>
+
+        <div id="alerta_Eliminar"></div>
+    </header>
+    
+    <div class="menu__side" id="menu_side">
+        <div class="name__page">
+            <i class="fa-solid fa-user-tie"></i>
+            <h4 id="nombre_usuario">Root</h4>
+        </div>
+    
+        <div class="options__menu" >
+
+            <a href="#" id="users"  title="Usuarios" class="seleccionado">
+                <div class="option">
+                    <i class="fa-solid fa-user"></i>
+                    <h4>Usuarios</h4>
+                </div>
+            </a>
+
+            <a href="#" title="Mensajes" id="mensajes"  >
+                <div class="option" >
+                    <i class="fa-solid fa-envelope"></i>
+                    <h4>Mensajes</h4>
+                </div>
+            </a>
+            
+
+            <a href="#" title="Cerrar Sección" id="cerrar_seccion">
+                <div class="option">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <h4>Cerrar Sección</h4>
+                </div>
+            </a>
+            
+
+        </div>
+    </div>
+    <main id="main">
+
+       <div class="tabla_container">
+        <table class="tabla_p">
+            <thead class="tabla_encabezado">
+                <tr>
+                    <th class="tabla_titulo">
+                            Nombre de Usuario
+                    </th>
+                    <th class="tabla_titulo">
+                            correo
+                    </th>
+                    <th class="tabla_titulo">
+                            Activo
+                    </th>
+                    <th class="tabla_titulo">
+                        Productos
+                    </th>
+                    <th class="tabla_titulo">
+                            Acciones
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="listado-usuarios" class="tabla_list">
+                
+                
+            </tbody>
+        </table>
+        
+    </main>
+</body>
+<div class="lds-ring"><div></div><div></div><div></div><div></div>
+<script src="/Cpts/js/adminRoot.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</html>

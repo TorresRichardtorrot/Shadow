@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowSell</title>
+    <link rel="stylesheet" href="/Cpts/css/admin.css">
+    <link rel="shortcut icon" href="/Cpts/imagen/logo-blanco.png" type="image/x-icon">
+</head>
+<script src="https://kit.fontawesome.com/235264cb45.js" crossorigin="anonymous"></script>
+<body id="body">
+    
+    <header>
+        <div class="icon_menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+        <h2 class="titulo_admin">Productos</h2>
+
+        <div id="alerta_Eliminar"></div>
+    </header>
+    
+    <div class="menu__side" id="menu_side">
+        <div class="name__page">
+            <i class="fa-solid fa-user-tie"></i>
+            <h4 id="nombre_usuario">ShadowSell</h4>
+        </div>
+    
+        <div class="options__menu" >
+
+            <a href="#" id="ir_Aapp"  title="Ir a ShadowSell">
+                <div class="option">
+                    <i class="fa-solid fa-laptop"></i>
+                    <h4>Ir a ShadowSell</h4>
+                </div>
+            </a>
+
+            <a href="#" title="Productos" id="Producto" class="seleccionado" >
+                <div class="option" >
+                    <i class="fa-solid fa-boxes-stacked" title="Productos"></i>
+                    <h4>Productos</h4>
+                </div>
+            </a>
+            <a href="#" id="nuevo_producto" title="Nuevo Producto" >
+                <div class="option">
+                    <i class="fa-solid fa-box-open" title="Nuevo Producto"></i>
+                    <h4>Nuevo Producto</h4>
+                </div>
+            </a>
+            
+
+            <a href="#" title="Balance de ventas" id="balance_venta">
+                <div class="option">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <h4>Balance de ventas</h4>
+                </div>
+
+            <a href="#" title="Cerrar Sección" id="cerrar_seccion">
+                <div class="option">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <h4>Cerrar Sección</h4>
+                </div>
+            </a>
+            
+
+        </div>
+    </div>
+    <main id="main">
+
+       <div class="tabla_container">
+        <table class="tabla_p">
+            <thead class="tabla_encabezado">
+                <tr>
+                    <th class="tabla_titulo">
+                            Nombre Producto
+                    </th>
+                    <th class="tabla_titulo">
+                            Precio
+                    </th>
+                    <th class="tabla_titulo">
+                            Categoría
+                    </th>
+                    <th class="tabla_titulo">
+                            Acciones
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="listado-Productos" class="tabla_list">
+                
+                
+            </tbody>
+        </table>
+        
+    </main>
+</body>
+<div class="lds-ring"><div></div><div></div><div></div><div></div>
+<script src="/Cpts/js/admin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</html>

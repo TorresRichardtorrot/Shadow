@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Cpts/css/style.css">
+    <link rel="stylesheet" href="/Cpts/css/normalize.css">
+    <link rel="shortcut icon" href="/Cpts/imagen/logo-blanco.png" type="image/x-icon">
+    <title>ShadowSell</title>
+    <!-- Primary Meta Tags -->
+<meta name="title" content="ShadowSell.com">
+<meta name="description" content="ShadowSell, Programa de ventas para tu negocio">
+<body class="content">
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <div class="bga"></div>
+    <div class="bga bga2"></div>
+    <div class="bga bga3"></div>
+
+
+    <header class="hero">
+        <nav  class="nav container ">
+            <a href="/"><div class="logo-registro"></div></a>
+            </div>
+
+            <ul class="nav_link nav_link--menu">
+                <li class="nav_items">
+                    <a href="/login/login.html" class="nav_links">Inicio</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#preguntas" class="nav_links">Preguntas</a>
+                </li>
+                <li class="nav_items">
+                    <a href="/contactos/contactos.html" class="nav_links">Contacto</a>
+                </li>
+                <!-- <li class="nav_items">
+                    <a href="#" class="nav_links"><img src="/Cpts/imagen/moon.svg" alt=""></a>
+                    <a href="#" class="nav_links"><img src="/Cpts/imagen/sun.svg" alt=""></a>
+                </li> -->
+
+                <img class="nav_close"  src="/Cpts/imagen/close.svg" alt="Cerrar">
+            </ul>
+            <div class="nav_menu">
+                <img src="/Cpts/imagen/menu.svg" alt="Menu" class="cta_menu">
+            </div>
+        </nav>
+        <section data-aos="zoom-in" data-aos-duration="3000" class="hero_container container">
+            <h1 class="hero_title">Bienvenido a ShadowSell</h1>
+            <p class="hero_paragraph">Registrarse</p>
+            <div>
+                <a class="cta" href="#planes">Registrarse Ahora</a>
+            </div>
+        </section>
+    </header>
+
+    <main class="">
+        <section class="container about">
+            <h2 class="subtitle">funciones de ShadowSell</h2>
+            <p class="about_paragraph">Funciones más importantes</p>
+
+            <div class="about_main" data-aos="zoom-in">
+                <article   class="about_icons">
+                    <img src="/Cpts/imagen/bar-chart.svg" alt="Valance de ventas" class="about_icon">
+                    <h3 class="about_title">Balance de ventas</h3>
+                    <p class="about_paragraph">Nuestro balance de ventas te brinda un panorama completo de tus ingresos y gastos, permitiéndote evaluar el desempeño económico de tu empresa. Analiza detalladamente tus fuentes de ingresos, identifica tus principales gastos y comprende la rentabilidad de tus operaciones.</p>
+                </article>
+
+                <article class="about_icons">
+                    <img src="/Cpts/imagen/reporte.svg" alt="reporte de ventas diario" class="about_icon">
+                    <h3 class="about_title">Reportes</h3>
+                    <p class="about_paragraph">Descubre el poder del análisis con nuestro completo reporte de ventas. Entra en el mundo de la inteligencia empresarial y obtén información detallada sobre tus actividades comerciales. Nuestro informe te brinda una visión clara de tus ventas, permitiéndote tomar decisiones fundamentadas y maximizar tus ganancias.</p>
+                </article>
+
+                <article class="about_icons" >
+                    <img src="/Cpts/imagen/dollar.svg" alt="multi monedas" class="about_icon">
+                    <h3 class="about_title">De dolares a bolivares al instante</h3>
+                    <p class="about_paragraph">Nuestro sistema utiliza las tasas de cambio más actualizadas y confiables para garantizar que obtengas resultados precisos y al día. Olvídate de las complicaciones de buscar manualmente las tasas de cambio en diferentes fuentes, nuestra plataforma se encarga de hacer todo el trabajo por ti.</p>
+                </article>
+            </div>
+        </section>
+        <section class="knowledge">
+            <div  data-aos-duration="2000" data-aos="fade-right" class="knowledge_container container">
+                <dir class="knowledge_texts">
+                    <h2 class="subtitle">¡ShadowSell es adaptable a todos los dispositivos!</h2>
+                    <p class="knowledge_paragraph">Ya no tendrás que preocuparte por tener que hacer zoom para leer el texto o desplazarte horizontalmente para ver toda la información. Nos hemos asegurado de que todo el contenido se presente de manera clara y legible en cualquier tamaño de pantalla, facilitando el uso de nuestra aplicacion</p>
+                         <a href="#planes" class="cta">Enpiza el Demo Gratis</a>
+                </dir>
+                
+                <figure data-aos="zoom-in" data-aos-duration="2000" class="knowledge_pinture" >
+                    <img src="/Cpts/imagen/mac1.png" alt="" class="knowledge_img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="price container" id="planes">
+            <h2  class="subtitle">Elige un plan para tu negocio</h2>
+            <div class="price_table">
+                <div class="price_element" data-aos="flip-left" data-aos-duration="1000">
+                    <p class="price_name">Plan de prueba</p>
+                    <h3 class="price_price">Gratis</h3>
+
+                    <div class="price_items">
+                        <p class="price_features">2 Cajero </p>
+                        <p class="price_features">Reporte de los ultimos 20 dias </p>
+                        <p class="price_features">Puedes almacenar hasta 2000 productos </p>
+                    </div>
+                    <a href="/register/registrarse.html" class="price_cta">Empieza ahora</a>
+                </div>
+
+                <div class="price_element price_element--best" data-aos="flip-left" data-aos-duration="3000">
+                    <p class="price_name">MAX</p>
+                    <h3 class="price_price">$<strong id="planC">30</strong>/mes</h3>
+
+                    <div class="price_items">
+                        <p class="price_features">Cajeros ilimitados</p>
+                        <p class="price_features">Full reportes</p>
+                        <p class="price_features">Productos ilimitados</p>
+                    </div>
+                    <a href="#" id="boton_max" class="price_cta">Empieza ahora</a>
+                </div>
+
+                <div class="price_element" data-aos="flip-left" data-aos-duration="1000">
+                    <p class="price_name">Plus</p>
+                    <h3 class="price_price">$<strong id="planP">15</strong>/mes</h3>
+
+                    <div class="price_items">
+                        <p class="price_features">15 Cajeros</p>
+                        <p class="price_features">podras obtener hasta reporte anuales </p>
+                        <p class="price_features">Puedes almacenar hasta 10000 productos</p>
+                    </div>
+                    <a href="#" id="boton_plus" class="price_cta">Empieza ahora</a>
+                </div>
+
+            </div>
+        </section>
+       
+        <section class="questions container"  id="preguntas">
+            <h2 class="subtitle">Pregunatas frecuentes</h2>
+            <p class="question_paragraph">¡Encuentra respuestas a tus dudas aquí!</p>
+
+                <section class="question_container"> 
+
+                    
+                    
+
+
+
+                    <article class="question_padding ">
+
+                        <div class="question_answer">
+                            <h3 class="question_title">¿La aplicación de punto de venta es compatible con la impresión de recibos?
+                                <span class="question_arrow">
+                                    <img src="/Cpts/imagen/arrow.svg" alt="flecha" class="question_img">
+                                </span>
+                            </h3>
+
+                            <p class="question_show">Aún no, estamos trabajando actualmente en una próxima actualización 
+                                de <strong>ShadowSell</strong> para incluir la compatibilidad con la impresión
+                                 de recibos. Reconocemos que esta es una característica importante para muchos de nuestros
+                                  usuarios y nos complace informarles que estará disponible en breve. Agradecemos su paciencia 
+                                  y le recomendamos mantenerse atento a nuestras actualizaciones para disfrutar de esta nueva
+                                   funcionalidad en el futuro cercano. Nuestro objetivo es ofrecer constantemente mejoras y nuevas
+                                    características para satisfacer las necesidades de nuestros clientes.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="question_padding">
+
+                        <div class="question_answer">
+                            <h3 class="question_title">¿Ofrecen soporte técnico en caso de tener algún problema o pregunta sobre la aplicación? 
+                                <span class="question_arrow">
+                                    <img src="/Cpts/imagen/arrow.svg" alt="flecha" class="question_img">
+                                </span>
+                            </h3>
+
+                            <p class="question_show">¡Sí! Ofrecemos soporte técnico completo para resolver cualquier problema o responder cualquier pregunta que puedas tener sobre nuestra aplicación de punto de venta.</p>
+                        </div>
+                    </article>
+
+                    <article class="question_padding">
+
+                        <div class="question_answer">
+                            <h3 class="question_title">¿Puedo utilizar la aplicación de punto de venta en múltiples dispositivos al mismo tiempo?
+                                <span class="question_arrow">
+                                    <img src="/Cpts/imagen/arrow.svg" alt="flecha" class="question_img">
+                                </span>
+                            </h3>
+
+                            <p class="question_show">¡Claro que sí! <strong>ShadowSell</strong> está diseñado específicamente para ser utilizado en múltiples dispositivos al mismo tiempo. Ya sea que desees utilizarla en un teléfono móvil, una tableta o una computadora, puedes acceder a tu cuenta desde cualquier dispositivo compatible y disfrutar de una experiencia perfectamente sincronizada. Esto te brinda la flexibilidad de gestionar tu negocio en diferentes ubicaciones o permitir que múltiples usuarios accedan a la aplicación simultáneamente.</p>
+                        </div>
+                    </article>
+                </section>
+        </section>
+
+        <section class="question_offer">
+            <h2 class="subtitle">¡Prueba <strong>ShadowSell</strong> gratis hoy mismo!</h2>
+            <p class="question_copy">En nuestro compromiso de brindarte la mejor experiencia,
+                 te ofrecemos la oportunidad de explorar todas las funcionalidades de nuestra
+                  aplicación de punto de venta a través de un demo gratuito. Sin necesidad de
+                   compromisos ni pagos, podrás experimentar por ti mismo cómo
+                 nuestra aplicación puede ayudarte a gestionar y optimizar tu negocio.</p>
+                 <a href="#planes" class="cta">Pruebalo ahora</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer_container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer_title">ShadowSell</h2>
+                <ul class="nav_link nav_link--footer">
+                    <li class="nav_items">
+                        <a href="/login/login.html" class="nav_links">Inicio</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Acerca de</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="/contactos/contactos.html" class="nav_links">Contacto</a>
+                    </li>
+                </ul>
+            </nav> 
+            <form action="https://formsubmit.co/motinaruto@gmail.com" method="POST" class="footer_form">
+                <h2 class="footer_newsletter">Enterate de todo</h2>
+                <div class="footer_inputs">
+                    <input type="email" name="email" placeholder="Email:" class="footer_input">
+                    
+                    <input type="submit" value="Enviar" class="footer_submit">
+                </div>
+            </form>
+        </section>
+        <section class="footer_copy container">
+            <div class="footer_social">
+                <a href="https://www.facebook.com/richard.torres.5680l/grid" class="footer_icons"><img src="/Cpts/imagen/facebook.svg" alt="" class="footer_img" ></a>
+                <a href="#" class="footer_icons"><img src="/Cpts/imagen/github.svg" alt="" class="footer_img" ></a>
+                <a href="#" class="footer_icons"><img src="/Cpts/imagen/youtube.svg" alt="" class="footer_img" ></a>
+            </div>
+            <h3 class="footer_copyright">Derechos reservado &copy; TR-SWS</h3>
+        </section>
+    </footer>
+    <script src="/Cpts/js/home.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

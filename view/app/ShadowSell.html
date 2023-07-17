@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html  lang="es">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Cpts/css/ShadowSell.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="/Cpts/imagen/logo-blanco.png" type="image/x-icon">
+    <title> ShadowSell</title>
+</head>
+
+<body id="bodyC">
+
+    <section id="fullscreen-element" class="padre">
+                <!-- primera seccion -->
+        <div class="logo-price">
+            <div class="logosws"></div>
+            <div class="box-precio">
+                <div class="precio-p">
+                    <p>Empresa: ShadowSell </p>
+                    <div style="display: flex;">
+                        <p>Fecha:</p><div id="pDeFecha"></div>
+                        </div>
+                    <div style="display: flex;">
+                    <p>Hora:</p><div id="pDeHora"></div>
+                    </div>
+                    <p>Cajero: 1</p>
+                </div>
+                <div class="container-precio">
+                    <div class="flex 1">
+                        <p>Iva</p>
+                        <div id="iva">16%</div>
+                    </div>
+                    <div class="flex 2">
+                        <p>Total en Bs</p>
+                        <div id="total-bs">0.00</div>
+                    </div>
+                    <div class="flex 3">
+                        <p>Total en $</p>
+                        <div id="total-dolares" style="color: rgb(7, 196, 7);">0.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!-- segunda seccion -->
+        <div class="container-taza">
+                <div id="memorias">
+                    <strong style="display: none;">Si no pierdes, no puedes disfrutar de las victorias </strong>
+                    <strong style="display: none;">El único modo de hacer un gran trabajo es amar lo que haces</strong>
+                    <strong style="display: none;">La inteligencia consiste no sólo en el conocimiento, sino también en la destreza de aplicar los conocimientos en la práctica</strong>
+                    <strong style="display: none;">Un sueño no se hace realidad por arte de magia, necesita sudor, determinación y trabajo duro</strong>
+                    <strong style="display: none;">Cuéntamelo y me olvidaré. enséñamelo y lo recordaré. involúcrame y lo aprenderé</strong>
+                    <strong style="display: none;">La lógica te llevará de la A a la Z. la imaginación te llevará a cualquier lugar</strong>
+                    <strong style="display: none;">A veces la adversidad es lo que necesitas encarar para ser exitoso</strong>
+                    <strong style="display: none;">No busques los errores, busca un remedio </strong>
+                    <strong style="display: none;">Si te caíste ayer, levántate hoy </strong>
+                    <strong style="display: none;">Siempre parece imposible... hasta que se hace</strong>
+                    <strong style="display: none;">No cuentes los días, haz que los días cuenten </strong>
+                    <strong style="display: none;">El valor de una idea radica en su uso</strong>
+                </div>
+                <div class="factura-container">
+                    Factura: <p id="factura">00-000000000</p>
+                    <input type="button" value="Dolar">
+                    <div id="taza-del-dia"><div class="TAZA">TIPO DE CAMBIO: <strong id="dolar_input">0.00</strong> Bs X $</div></div> 
+                </div>
+        </div>
+                <!-- tercera seccion -->
+        <div class="padre-venta">
+            <div class="busqueda-producto">
+                <div class="buscador">
+                    <img src="/Cpts/imagen/lupa.svg" alt="">
+                    <input  class="input-buscador" placeholder="Código"  type="search">
+                </div>
+                <div class="box-articulos">
+                   
+                    <div id="carrito" class="articulos">
+
+                    <table id="lista-carrito" class="tabla" >
+                        <thead>
+                            <tr>
+                                <th class="th-cantidad">CANTIDAD</th>
+                                <th class="th-descriccion">NOMBRE</th>
+                                <th class="th-precionUnidad">PRECIO</th>
+                                <th class="th-total">TOTAL</th>
+                                <th class="th-accion">ACCIÓN</th>
+                            </tr>
+                        </thead>
+                            
+                     <!-- aqui se agregan los articulos de venta  -->
+                    <tbody class="contenedor" id="tabla_one">
+                    </tbody>
+                    </table>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="flex">
+                        <p>Items Totales</p>
+                        <div id="intems_totales">0.00</div>
+                    </div>
+                    <div class="flex">
+                        <p>Productos Totales</p>
+                        <div id="productos_totales">0.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- +++/* tercer seccion 1.2 */+++ -->
+            <div class="padre-productos-and-btn" >
+            
+                <!-- **** AQUI VOY A COLOCAR LOS PRODUCTOS QUE CREE Y LOS VOY A PODER BUSCAR **** -->
+
+                <div class="buscador2">
+                      <img src="/Cpts/imagen/lupa.svg" alt="">
+                    <input  class="input-buscador" placeholder="Nombre o Categoría" id="input-buscador"  type="text">
+                    <div class="microfono_buscador">
+                        <a href="#" id="boton_microfono"><img src="/Cpts/imagen/microfono.svg" alt="busqueda por microfono"></a>
+                    </div>
+                        
+                </div>
+                <div class="producto-img">
+
+                    <div id="lista-items" class="grid-productos">
+                            <!-- Aqui se cargan los producto -->
+                    </div>
+                    
+                </div>
+                <div class="botones">
+
+                    <div id="password_Admin" class="container_password" style="display: none;">
+                        <form>
+                            <div class="formulario_password">
+                                <div class="box-password">
+                                    <input type="password"  id="password-input">
+                                    <input type="checkbox"  id="checkPassword" class="checkbox-original">
+                                    <label for="checkPassword" class="checkbox-personalizado">
+    
+                                        <ion-icon name="eye-outline" class="icono-normal"></ion-icon>
+                                        <ion-icon name="eye-off-outline" class="icono-seleccionado"></ion-icon>
+    
+                                     </label>
+                                 </div>
+                                <div>
+                                    <button class="enviar_password">Verificar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="botones-P">
+                        <div>
+                            <button id="Cantidad-btn"  >
+                            <div class="btns-opciones">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-123" viewBox="0 0 16 16">
+                                    <path d="M2.873 11.297V4.142H1.699L0 5.379v1.137l1.64-1.18h.06v5.961h1.174Zm3.213-5.09v-.063c0-.618.44-1.169 1.196-1.169.676 0 1.174.44 1.174 1.106 0 .624-.42 1.101-.807 1.526L4.99 10.553v.744h4.78v-.99H6.643v-.069L8.41 8.252c.65-.724 1.237-1.332 1.237-2.27C9.646 4.849 8.723 4 7.308 4c-1.573 0-2.36 1.064-2.36 2.15v.057h1.138Zm6.559 1.883h.786c.823 0 1.374.481 1.379 1.179.01.707-.55 1.216-1.421 1.21-.77-.005-1.326-.419-1.379-.953h-1.095c.042 1.053.938 1.918 2.464 1.918 1.478 0 2.642-.839 2.62-2.144-.02-1.143-.922-1.651-1.551-1.714v-.063c.535-.09 1.347-.66 1.326-1.678-.026-1.053-.933-1.855-2.359-1.845-1.5.005-2.317.88-2.348 1.898h1.116c.032-.498.498-.944 1.206-.944.703 0 1.206.435 1.206 1.07.005.64-.504 1.106-1.2 1.106h-.75v.96Z"/>
+                                  </svg>
+                            </div>
+                        </button><br><p>Cantidad</p>
+                     </div>
+                        <div>
+                            <button id="vaciar-compras">
+                                <div class="btns-opciones">
+                               <img src="/Cpts/imagen/basura.svg" alt="Vaciar compras">
+                                </div>
+                            </button><br><p>Eliminar</p>
+                        </div>
+                        <div>
+                            <button onclick="redirigirAPagina()">
+                            <div class="btns-opciones">
+                                <img src="/Cpts/imagen/user.svg" alt="Panel de admin">
+                            </div>
+                        </button><br> <p>admin</p>
+                    </div>
+                    <div><button onclick="cambiarContenido()">
+                        <div class="btns-opciones">
+                            <img src="/Cpts/imagen/cambiarD.svg" alt="Cambio del precio del dollar">
+                        </div>
+                    </button><br> <p>Dollar</p></div>
+
+                    <div><button id="fullscreen-btn" onclick="toggleFullScreen()">
+                        <div class="btns-opciones">
+                       <img src="/Cpts/imagen/fullscreen.svg" alt="Pantalla completa">
+                    </div></button><br> <p>
+                        full screen</p>
+                </div>
+
+                        <div>
+                            <button id="btn-calculadora">
+                                <div class="btns-opciones">
+                                    <img src="/Cpts/imagen/calculadora.svg" alt="Calculadora">
+                                </div>
+                            </button>
+                            <br> <p>Calculadora</p></div>
+
+                        <div>
+                            <button id="btn-reproductor">
+                                <div class="btns-opciones">
+                                    <img src="/Cpts/imagen/musica.svg" alt="reproductor">
+                                </div>
+                            </button>
+                            <br> <p>Reproductor</p>
+                        </div>
+                        <div><button>
+                            <input type="color" name="body" id="color_body">
+                        </button><br> <p>Tema</p></div>
+                       
+                    </div>
+                    <div class="botones-G">
+                        <button onclick="generarFactura()"  title="Haz clic aquí para procesar venta" class="btn-cart"><i class='bx bx-cart'></i></button>
+
+                        <button  title="Haz clic aquí para cerrar todo" class="btn-cerrar"><i class='bx bx-power-off'></i></button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  id="reproductor" class="ventana2 oculto">
+            <img src="/Cpts/imagen/move.svg" alt=""> 
+          <audio controls class="input-musica"  id="musica2" src=""></audio>
+        </div>
+
+        <div class="ventana oculto"  id="ventana-Calculadora">
+
+            <div class="calculadora " >
+    
+                <div class="pantalla">0</div>
+        
+                <button id="c" class="btn">C</button>
+                <button id="borrar" class="btn">←</button>
+                <button class="btn">/</button>
+                <button class="btn">*</button>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">-</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">+</button>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button id="igual" class="btn">=</button>
+                <button id="cero" class="btn">0</button>
+                <button class="btn">.</button>
+            </div>
+           
+          </div>
+
+        <div class="container-factura" style="display:none;">
+            <!-- <div class="modo-de-pago"></div> -->
+            <div class="cfb">
+                <div class="display-flex">
+                <div><img class="logo-factura" src="/Cpts/imagen/logo-negro.png" alt=""></div>
+                <h1>ShadowSell</h1>
+                <div class="fecha" id="pDeFecha2"></div>
+                </div>
+                <div class="text-f"><h2>factura</h2></div>
+                <div class="modo_de_pago">
+                    <h5>Modo de pago:</h5>
+
+                    <div>
+                    <label for="efectivo">Efectivo:</label> 
+                    <input type="radio" name="pago" id="efectivo">
+                    </div>
+
+                    <div>
+                    <label for="debito">Debito:</label>
+                    <input type="radio" name="pago" id="debito">
+                    </div>
+
+                    <div>
+                    <label for="credito">Credito:</label>
+                    <input type="radio" name="pago" id="credito">
+                    </div>
+                </div>
+                
+                <div  class="box-factura contenedor">
+                <!-- Aqui se crea la factura -->
+
+                </div>
+                <div class="flex-btn-f">
+                    <button onclick="atrasFactura()" id="atras-btn" class="btn-atras" ><span>Atras</span></button>
+                    <button onclick="facturar()" id="facturar-btn" class="btn-facturar" ><span>Facturar</span></button>
+                </div>
+            </div>   
+            </div>
+        </div>
+
+    </section>
+    <script src="/Cpts/js/funtionShadowSell.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+<div class="lds-ring"><div></div><div></div><div></div><div></div>
+</html>
