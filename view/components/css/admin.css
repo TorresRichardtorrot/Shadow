@@ -613,8 +613,10 @@ main{
 @media(max-width:931px){
     .botones_tabla button:first-child{
         margin-right: 0;
-        padding-right: 0;
      }
+}
+@media(max-width:848px){
+    
 }
 @media screen and (max-width: 760px){
     .body_move{
@@ -633,22 +635,25 @@ main{
         font-size: 10px;
     }
     .botones_tabla button{
-        padding: 2px;
+        padding: 2px 7px;
     }
+    
+    
 }
 @media(max-width:400px){
     .tabla_p{
-        font-size: 10px;
+        font-size: 9px;
     }
     .tabla_encabezado{
         font-size: 10px;
     }
-    .botones_tabla{
-        padding: 5px;
-    }
+    
     .botones_tabla button{
-        padding: 0px;
+        padding: 1px 4px;
     }
+    .botones_tabla button:first-child{
+        padding: 1px 4px;
+     }
 }
 @media screen and (max-width:1200px) {
     .container__cards{

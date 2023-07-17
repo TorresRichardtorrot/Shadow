@@ -58,7 +58,7 @@ body::after,body::before{
     content:'';
     position: fixed;
     height: 450px;
-    width: 450px;
+    width: 90%;
     border-radius: 50%;
     z-index: -1;
     filter: blur(150px);
@@ -80,7 +80,7 @@ a{
     text-decoration: none;
     font-weight: 500;
     display: inline-block;
-    /* cursor: url(/Cpts/imagen/cursor-pointer.png),auto ; */
+    cursor: pointer;
 }
 .grandient-text{
     background: linear-gradient(to right,var(--primario),var(--segunadario));
@@ -97,6 +97,7 @@ a{
 }
 .form-content{
     width: 40%;
+    
     min-width: 450px;
     position:relative ;
     z-index: 1;
@@ -162,8 +163,8 @@ a{
     background: var(--logo-color);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 90px;
-    height: 90px;
+    width: 140px;
+    height: 140px;
     z-index: -4;
 }
 .tituloh3{
@@ -174,7 +175,6 @@ a{
     
 }
 .form-content .box{
-    
     border-color: var(--glass-bg-color);
     border: 1px solid var(--border-color);
     padding: 40px 50px ;
@@ -262,7 +262,7 @@ a{
     text-align: right;
 }
 .form-content .btn{
-    /* cursor: url(/Cpts/imagen/cursor-pointer.png),auto ; */
+    cursor: pointer ;
     transition: cursor 0.3s ease;
     height: 45px;
     width: 100%;
@@ -312,6 +312,7 @@ a{
     }
     .alerta.show{
         opacity: 1;
+         ;
     }
 
     .alerta h3{
@@ -320,21 +321,29 @@ a{
     }
      
     /* + ***RESPOSIVE*** + */
-@media(max-width: 575px){
+    @media(mix-width:600px){
+        .h3{
+            height: 200px;
+        }
+    }
+
+
+
+@media(max-width:575px){
     body::after,
     body::before{
-        height: 250px;
-        width: 250px;
         filter: blur(100px);
     }
     .form-content{
-        width: 80%;
+        width: 90%;
     }
     .form-content .box{
+        width: 90%;
+        height: 900px;
         padding: 30px;
     }
     .form-content h3{
-        font-size: 30px;
+        font-size: 3.6rem;
     }
     .alerta{
         top: -12;
