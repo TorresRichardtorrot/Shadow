@@ -613,6 +613,7 @@ main{
 @media(max-width:931px){
     .botones_tabla button:first-child{
         margin-right: 0;
+        padding-right: 0;
      }
 }
 @media screen and (max-width: 760px){
@@ -628,6 +629,9 @@ main{
     }
 }
 @media(max-width:490px){
+    .tabla_titulo{
+        font-size: 10px;
+    }
     .botones_tabla button{
         padding: 2px;
     }

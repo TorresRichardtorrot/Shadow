@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
     border-radius: 3px;  
 }
 body{
-    cursor: url(/Cpts/imagen/cursor-defauld.png),auto ;
+    /* cursor: url(/Cpts/imagen/cursor-defauld.png),auto ; */
     transition: cursor 0.3s ease;
     background-color: var(--body-bg-color);
     color:var(--text-light-gray);
@@ -80,7 +80,7 @@ a{
     text-decoration: none;
     font-weight: 500;
     display: inline-block;
-    cursor: url(/Cpts/imagen/cursor-pointer.png),auto ;
+    /* cursor: url(/Cpts/imagen/cursor-pointer.png),auto ; */
 }
 .grandient-text{
     background: linear-gradient(to right,var(--primario),var(--segunadario));
@@ -262,7 +262,7 @@ a{
     text-align: right;
 }
 .form-content .btn{
-    cursor: url(/Cpts/imagen/cursor-pointer.png),auto ;
+    /* cursor: url(/Cpts/imagen/cursor-pointer.png),auto ; */
     transition: cursor 0.3s ease;
     height: 45px;
     width: 100%;
