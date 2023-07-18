@@ -10,7 +10,7 @@ btnInit.addEventListener('click', (event) => {
   
   const email = inputEmail.value;
   const clave = inputPassword.value;
-  console.log(email,clave)
+  // console.log(email,clave)
   if(email ===""||clave ===""){
     mostrarAlerta("<h3>¡Los campos no pueden estar vacios!</h3>")
   }else{
