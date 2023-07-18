@@ -1037,10 +1037,42 @@ tr:last-child td{
             flex-direction: row;
         }
     }
-    @media (max-width: 814px){
+    @media (max-width: 995px){
+        .padre-venta{
+            display: grid;
+            gap: 30px;
+        }
+        .container-taza{
+            display: block;
+            padding: 5px 13px;
+            margin-top: 30px;
+            background: linear-gradient(180deg, #00000066, #00000021, #ffffff00);
+            border-radius: 12px;
+            box-shadow: 0px -5px 7px 2px #00000036;
+
+        }
+        #memorias{
+            width: 650px;
+        }
+        .factura-container{
+            margin-top: 15px;
+        }
+        .busqueda-producto{
+            width: 100%;
+            margin-top: 5px;
+        }
+        .padre-productos-and-btn{
+            width: 100%;
+        }
         .grid-productos{
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(3,1fr);
         
+        }
+        .botones-P{
+            row-gap: 12px;
+        }
+        .btn-cart, .btn-cerrar {
+            margin: 0;
         }
     }
     @media (max-width: 732px){
